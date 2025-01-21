@@ -28,7 +28,7 @@ use Endroid\QrCode\Writer\PngWriter;
 $first_name = sanitizeUserName($first_name);
 if(!in_array($Chat_type,["private"]))return;
 #-----------telegram_ip_ranges------------#
-if (!checktelegramip()) die("دسترسی غیرمجاز");
+#if (!checktelegramip()) die("دسترسی غیرمجاز");
 #-------------Variable----------#
 $users_ids = select("user", "id",null,null,"FETCH_COLUMN");
 $setting = select("setting", "*");
